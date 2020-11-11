@@ -1,0 +1,42 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.container{
+  margin: auto;
+  width: 50%;
+  height:700px;
+  border:2px solid #ff0000;
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
+.box1Head{
+  width: 100%;
+  height: 50%;
+  border: 2px solid black;
+  display: flex;
+
+}
+.box2Body{
+  width: 100%;
+  height: 50%;
+  border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+
+}
+.navigation{
+  border: 4px solid purple;
+  width: 50%;
+  height: 100%;
+}
+.Text{
+  border: 4px solid greenyellow;
+  width: 50%;
+  height: 100%;
+}
+li{
+  cursor: pointer;
+}
