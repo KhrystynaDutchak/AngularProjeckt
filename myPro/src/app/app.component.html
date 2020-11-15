@@ -1,13 +1,33 @@
 <div class="container">
-<div class="box1Head">
-  <div class="Text"></div>
-  <div class="navigation">
-    <ul class="list">
-      <li>Home</li>
-      <li>contacts</li>
-    </ul>
+  <div class="box">
+
+    <div class="left">
+      <div class="photo">
+        <img src="Cats_Black_background_Glance_549260_2755x4000.jpg" alt="" width="100%" height="600px">
+      </div>
+      <div class="contacts">
+        <img src="yt_HT04Q_1c.jpg" width="100px" height="100px" alt="">
+      </div>
+    </div>
+
+    <div class="information">
+      <div class="aboutMe">
+        <span>
+          <p>about me</p>
+          <h1>Hello</h1>
+        </span>
+      </div>
+      <div class="component">
+        <ul>
+
+          <li routerLink="/skills">Skills</li>
+          <li routerLink="/education">Education</li>
+          <li routerLink="/project">Project</li>
+        </ul>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
   </div>
 </div>
-  <div class="box2Body"></div>
-</div>
+
 
