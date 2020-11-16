@@ -3,3 +3,7 @@ h2{
   font-size: 26px;
   font-family: "Brush Script MT";
 }
+@media screen and (max-width: 600px){
+  h2{
+    font-size:18px ;
+  }}

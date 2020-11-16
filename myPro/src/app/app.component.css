@@ -1,16 +1,21 @@
 *{
-  margin: 0px;
-  padding: 0px;
-}
-.container{
-  width: 100%;
-  height: 700px;
-  background-color: black;
-  /*background-image: url("derevyannie-steni.orig.jpg");*/
-  background-color: black;
-  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
 
 }
+.container{
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background: #181515;
+
+}
+
+
 .box{
   width: 70%;
   height: 700px;
@@ -22,7 +27,7 @@
 }
 .box2{
   width: 70%;
-  height: 700px;
+  height: 100%;
   background-color: #181515;
   margin: 0px auto;
   display: flex;
@@ -138,3 +143,54 @@ h6{
   font-size: 24px;
   font-family: "Brush Script MT";
 }
+
+@media screen and (max-width: 1500px){
+h2{
+  font-size:24px ;
+}
+}
+@media screen and (max-width: 1200px){
+  .box{
+    width: 60%;
+  }
+  .box2{
+    width: 100%;
+  }
+  ul{
+    font-size: 26px;
+  }
+  h2{
+    font-size: 20px;
+  }
+  h1{
+    font-size: 40px;
+  }
+
+}
+@media screen and (max-width: 600px){
+  .box{
+    width: 60%;
+  }
+  .box2{
+    width: 90%;
+  }
+  ul{
+    font-size: 16px;
+  }
+ h2{
+   font-size: 12px;
+ }
+ h1{
+   font-size: 24px;
+ }
+ h6{
+   font-size: 14px;
+ }
+ h4{
+   font-size: 18px;
+ }
+
+
+}
+
+

@@ -23,9 +23,12 @@ li{
 ul{
  list-style-type:square;
   /*display: flex;*/
-  /*align-content: space-between;*/
-
-
-
-
-}
+  /*align-content: space-between;*/}
+@media screen and (max-width: 600px){
+  li{
+    font-size:18px ;
+  }
+img{
+  width: 40px;
+  height: 40px;
+}}
