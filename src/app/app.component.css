@@ -9,8 +9,7 @@
   min-height: 100vh;
   background-size: 100%;
   background: #181515;
-
-
+  overflow: hidden;
 }
 
 
