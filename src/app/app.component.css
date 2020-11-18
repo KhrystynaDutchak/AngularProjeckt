@@ -2,23 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-
-
 }
 .container{
   margin: auto;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  min-height: 100vh;
   background-size: 100%;
   background: #181515;
+
 
 }
 
 
 .box{
   width: 70%;
-  height: 700px;
+  height: 90%;
   background-color: #242424;
   margin: 0px auto;
   opacity: 0.7;
