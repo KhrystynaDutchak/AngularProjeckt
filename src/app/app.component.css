@@ -1,193 +1,125 @@
 *{
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  padding:0;
+  box-sizing: border-box;  
 }
 .container{
-  margin: auto;
-  width: 100vw;
-  min-height: 100vh;
-  background-size: 100%;
-  background: #181515;
-  overflow: hidden;
+ margin: -6px;
+ overflow: hidden;
 }
-
-
-.box{
-  width: 70%;
-  height: 90%;
-  background-color: #242424;
-  margin: 0px auto;
-  opacity: 0.7;
+.block1{
+  min-width: 100%;
+  min-height: 920px;
+  background-image: url(99px_ru_wallpaper_192428_temnie_gornie_vershini_na_fone_rozovatogo_tumannogo_neba.jpg);
   display: flex;
-
 }
-.box2{
-  width: 70%;
-  height: 100%;
-  background-color: #181515;
-  margin: 0px auto;
+/* .block2{
+  width: 100%;
+  min-height: 1024px;
+  background-color: rgb(36, 45, 42);
+} */
+.block2{
+  width: 100%;
+  min-height: 400px;
+  background-color: rgb(240, 207, 200);
+  background: linear-gradient(to top,rgb(240, 207, 200), rgb(36, 45, 42) );
   display: flex;
-
-
+  flex-direction: column;
 }
-.photo{
-  width: 100%;
-  height: 600px;
 
-}
-.left{
+.hello{
   width: 50%;
-  height: 100%;
-  /*border: 3px solid coral;*/
-  display:  flex;
-  flex-wrap: wrap;
-  background-color: black;
-
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
 }
-.information{
+h3{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 50px;
+  color: rgba(0,0,0,0.6);
+  text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+  0px -5px 35px rgba(255,255,255,0.3);
+
+} 
+p{
+  font-size: 25px;
+}
+.arrow-down {
+  margin-top: 500px;
   width: 50%;
-  height: 100%;
-  /*background-color: #686868;*/
-  /*opacity: 0.2;*/
-
-
-}
-.aboutMe{
-  margin-top: 20px;
-  width: 100%;
-  height: 200px;
-  /*border: 4px solid red;*/
-}
-.component{
-  width: 100%;
   height: 400px;
-  /*border: 4px solid red;*/
+  margin-left: 200px;
+  
+ 
+}
+.arrow-down span {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-bottom: 5px solid #020608;
+  border-right: 5px solid #070707;
+  transform: rotate(45deg);
+  margin: -16px;
+  animation: arrow-down 2s infinite;
+}
+.arrow-down span:nth-child(2){
+  animation-delay: -0.2s;
+}
+.arrow-down span:nth-child(3){
+  animation-delay: -0.4s;
+}
+@keyframes arrow-down {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20px,20px);
+  }
+}
+.header{
+  width: 100%;
+  height: 100px;  
 }
 ul{
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   font-family: "Brush Script MT";
-  font-size: 32px;
-  /*font-weight: bold;*/
+  font-size: 72px;  
   color: white;
-  box-shadow: red;
 
 }
 li {
-  cursor: pointer;
-  /*border-bottom: 3px solid red;*/
-  /*border-radius: 70%;*/
+  cursor: pointer;  
   box-shadow: red;
   outline: none;
 }
 li:active{
-  color: green;
+  color:rgb(240, 207, 200)
 }
-.contacts{
+.information{
   width: 100%;
-  height: 60px;
-  background-color: black;
+  height: 900px; 
+ 
+}
+
+#footer{
+width: 100%;
+height: 100px;
+display: flex;
+justify-content: space-between;
+background-color: rgb(240, 207, 200);
+}
+.contacts_url{
+  width: 70%;
+  height: 100px;
   display: flex;
-  justify-content: space-between;
-  align-content: center;
-
+  justify-content: space-around;  
 }
-
-
-.insta{
-  width: 33%;
-  height: 100%;
-  /*border: 2px solid red;*/
-}
-p{
-  font-family: "Brush Script MT";
-  font-size: 34px;
-  /*font-weight: bold;*/
-  color: darkgray;
-}
-h4{
-  color: green;
-  font-family: "Brush Script MT";
-  font-size: 30px;
-}
-h5{
-  color: white;
-  font-family: "Brush Script MT";
-  font-size: 28px;
-}
-.name{
-  width: 100%;
-  height: 50px;
-  background-color: red;
-}
-h1{
-  color: green;
-  font-family: "Brush Script MT";
-  font-weight: bold;
-  font-size: 48px;
-
-}
-h2{
-  color: darkgray;
-  font-family: "Brush Script MT";
-  font-weight: bold;
-  font-size: 34px;
-}
-h6{
-  color: darkgray;
-  font-size: 24px;
-  font-family: "Brush Script MT";
-}
-
-@media screen and (max-width: 1500px){
-h2{
-  font-size:24px ;
-}
-}
-@media screen and (max-width: 1200px){
-  .box{
-    width: 60%;
-  }
-  .box2{
-    width: 100%;
-  }
-  ul{
-    font-size: 26px;
-  }
-  h2{
-    font-size: 20px;
-  }
-  h1{
-    font-size: 40px;
-  }
-
-}
-@media screen and (max-width: 600px){
-  .box{
-    width: 60%;
-  }
-  .box2{
-    width: 90%;
-  }
-  ul{
-    font-size: 16px;
-  }
- h2{
-   font-size: 12px;
- }
- h1{
-   font-size: 24px;
- }
- h6{
-   font-size: 14px;
- }
- h4{
-   font-size: 18px;
- }
-
-
-}
-
-

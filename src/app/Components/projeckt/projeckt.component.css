@@ -1,0 +1,15 @@
+.prod{
+    width: 350px;
+    height: 350px;
+    display: flex;   
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    font-family: "Brush Script MT";
+    font-weight: bold;
+    font-size: 44px;
+}
